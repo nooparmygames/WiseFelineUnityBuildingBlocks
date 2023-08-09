@@ -8,12 +8,12 @@ using UnityEngine;
 
 public class BedTrigger : MonoBehaviour
 {
-
+    private ActionBase action;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out MainAgent mainAgent))
         {
-            mainAgent.GetComponent<BlackBoard>().SetBool("shower", false);
+            mainAgent.OnSleepSuccess(action);
         }
     }
 }

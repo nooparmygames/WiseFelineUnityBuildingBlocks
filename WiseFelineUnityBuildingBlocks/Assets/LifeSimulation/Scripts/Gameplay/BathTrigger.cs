@@ -8,14 +8,12 @@ using UnityEngine;
 
 public class BathTrigger : MonoBehaviour
 {
-
+    private ActionBase action;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out MainAgent mainAgent))
         {
-            mainAgent.GetComponent<BlackBoard>().SetFloat("energy", 10f);
-            mainAgent.GetComponent<BlackBoard>().SetFloat("havingpee", 0f);
-            mainAgent.GetComponent<BlackBoard>().SetFloat("messy", 100f);
+            mainAgent.OnGoToBathroomSuccess(action);
         }
     }
 }

@@ -8,14 +8,12 @@ using UnityEngine;
 
 public class KitchenDeskTrigger : MonoBehaviour
 {
-
+    private ActionBase action;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out MainAgent mainAgent))
         {
-            mainAgent.GetComponent<BlackBoard>().SetFloat("energy", 20f);
-            mainAgent.GetComponent<BlackBoard>().SetFloat("havingpee", 100f);
-            mainAgent.GetComponent<BlackBoard>().SetBool("food", false);
+            mainAgent.OnEatFoodSuccess(action);
         }
     }
 }

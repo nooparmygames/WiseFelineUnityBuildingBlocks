@@ -8,13 +8,12 @@ using UnityEngine;
 
 public class ShowerTrigger : MonoBehaviour
 {
-
+    private ActionBase action;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out MainAgent mainAgent))
         {
-            mainAgent.GetComponent<BlackBoard>().SetFloat("messy", 0f);
-            mainAgent.GetComponent<BlackBoard>().SetBool("shower", true);
+            mainAgent.OnGoToShowerSuccess(action);
         }
     }
 }

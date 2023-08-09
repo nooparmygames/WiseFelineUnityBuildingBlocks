@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MoveAndWaitAndChangeFloat
   m_EditorClassIdentifier: 
   guid: 6f00860a52cca974db122314ebe6e8e7
-  Name: Hang Out
+  Name: HangOut
   _weight: 1
   _maxTargetCount: 5
   _useMomentumOnTarget: 0
@@ -36,7 +36,7 @@ MonoBehaviour:
       unityObjectValue: {fileID: 0}
     maxExecutionCount: 0
   positionKeyName: doorposition
-  waitingTime: 15
+  waitingTime: 10
 --- !u!114 &-8614639354365384440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -271,7 +271,7 @@ MonoBehaviour:
   m_Name: MoveAndWaitAndChangeFloat
   m_EditorClassIdentifier: 
   guid: b32cb996f30a2ec41affd50b6eb3ca8d
-  Name: Go to shop
+  Name: GoToShop
   _weight: 1
   _maxTargetCount: 5
   _useMomentumOnTarget: 0
@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Name: MoveAndWaitAndChangeFloat
   m_EditorClassIdentifier: 
   guid: 800f791da788d064da85d6dd55f5ea79
-  Name: Eat food
+  Name: EatFood
   _weight: 1
   _maxTargetCount: 5
   _useMomentumOnTarget: 0
@@ -591,7 +591,7 @@ MonoBehaviour:
   m_Name: MoveAndWaitAndChangeFloat
   m_EditorClassIdentifier: 
   guid: 54caed3876ca6474882aaa896b4ed260
-  Name: Go to shower
+  Name: GoToShower
   _weight: 1
   _maxTargetCount: 5
   _useMomentumOnTarget: 0
@@ -1063,7 +1063,7 @@ MonoBehaviour:
   m_Name: MoveAndWaitAndChangeFloat
   m_EditorClassIdentifier: 
   guid: 2d725284a139616449b979d386e19a2f
-  Name: Go to bathroom
+  Name: GoToBathroom
   _weight: 1
   _maxTargetCount: 5
   _useMomentumOnTarget: 0

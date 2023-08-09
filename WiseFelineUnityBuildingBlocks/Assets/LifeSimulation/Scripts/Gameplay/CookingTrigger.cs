@@ -8,15 +8,12 @@ using UnityEngine;
 
 public class CookingTrigger : MonoBehaviour
 {
-
+    private ActionBase action;
     private void OnTriggerEnter(Collider other)
     {
         if (other.TryGetComponent(out MainAgent mainAgent))
         {
-            mainAgent.GetComponent<BlackBoard>().SetFloat("energy", 30f);
-            mainAgent.GetComponent<BlackBoard>().SetFloat("hunger", 50f);
-            mainAgent.GetComponent<BlackBoard>().SetBool("food", true);
-            mainAgent.GetComponent<BlackBoard>().SetBool("foodmaterial", false);
+            mainAgent.OnCookSuccess(action);
         }
     }
 }
